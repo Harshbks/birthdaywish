@@ -3,17 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Updated title for your crush -->
     <title>Happy Birthday Didi</title>
     
-    <!-- This loads Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- This loads the fonts we'll use -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@700&display=swap');
         
-        /* ... animation styles (no change) ... */
         .scroll-animate {
             opacity: 0;
             transform: translateY(40px);
@@ -25,7 +21,6 @@
             transform: translateY(0);
         }
 
-        /* ... font styles (no change) ... */
         .font-serif {
             font-family: 'Playfair Display', serif;
         }
@@ -49,7 +44,6 @@
             top: -10%; /* Start off-screen */
             font-size: 30px; /* Size for the emoji */
             opacity: 0.7;
-            /* Added rotate animation here */
             animation: fall 15s linear infinite, rotate 8s ease-in-out infinite alternate;
         }
 
@@ -64,7 +58,6 @@
             to { transform: rotate(30deg) scale(1.1); }
         }
 
-        /* Set up 10 petals pieces with different speeds/delays */
         .petal:nth-child(1) { left: 5%; animation-duration: 14s; animation-delay: 0s; --sway: 20px; }
         .petal:nth-child(2) { left: 15%; animation-duration: 12s; animation-delay: -3s; --sway: -30px; font-size: 20px; opacity: 0.5; }
         .petal:nth-child(3) { left: 25%; animation-duration: 17s; animation-delay: -7s; --sway: 40px; }
@@ -77,12 +70,9 @@
         .petal:nth-child(10) { left: 95%; animation-duration: 12s; animation-delay: -10s; --sway: -40px; }
     </style>
 </head>
-<!-- Updated background color to pink-50 -->
 <body class="bg-pink-50 font-sans text-gray-700 relative">
 
-    <!-- NEW: Petal Animation Container -->
     <div class="falling-petals" aria-hidden="true">
-        <!-- Changed from confetti to petal and emoji to 🌸 -->
         <div class="petal">🌸</div>
         <div class="petal">🌸</div>
         <div class="petal">🌸</div>
@@ -95,13 +85,7 @@
         <div class="petal">🌸</div>
     </div>
 
-    <!-- 
-      HERO SECTION 
-      Add relative and z-20 so it appears ON TOP of the petals
-    -->
     <section class="min-h-screen flex flex-col items-center justify-center text-center p-4 relative z-20">
-        <!-- EDIT THIS TEXT -->
-        <!-- Updated text and colors for your crush -->
         <h1 class="font-serif text-5xl md:text-7xl font-bold text-pink-600">
             Happy Birthday Didi
         </h1>
@@ -109,7 +93,6 @@
             May your birthday be as wonderful as you are!
         </p>
         
-        <!-- Scroll down arrow, updated color -->
         <div class="mt-20 text-pink-500">
             <svg class="w-8 h-8 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -117,28 +100,15 @@
         </div>
     </section>
 
-    <!-- 
-      CONTENT SECTIONS 
-    -->
-    <!-- Add relative and z-20 so content cards appear ON TOP of the petals -->
     <main class="w-full overflow-x-hidden relative z-20">
 
-        <!-- 
-          SECTION 1: Image on Left
-        -->
         <section class="scroll-animate max-w-4xl mx-auto my-24 p-6 md:p-10 bg-white rounded-2xl shadow-xl">
             <div class="md:flex md:items-center md:space-x-10">
-                <!-- 
-                  EDIT THIS IMAGE
-                  Add a favorite photo of her.
-                -->
                 <div class="md:w-1/2">
                     <img src="https://i.ibb.co/8n9VdDCT/p1.jpg" 
                          alt="A fun memory" 
                          class="w-full rounded-lg shadow-md aspect-video md:aspect-square object-cover">
                 </div>
-                
-                <!-- EDIT THIS TEXT -->
                 <div class="md:w-1/2 mt-6 md:mt-0">
                     <h2 class="font-serif text-3xl font-bold text-pink-600">Best Sister Ever</h2>
                     <p class="mt-4 text-lg">
@@ -148,19 +118,13 @@
             </div>
         </section>
 
-        <!--     
-        SECTION 2: Image on Right
-        -->
         <section class="scroll-animate max-w-4xl mx-auto my-24 p-6 md:p-10 bg-white rounded-2xl shadow-xl">
             <div class="md:flex md:items-center md:space-x-10 md:flex-row-reverse md:space-x-reverse">
-                <!-- EDIT THIS IMAGE -->
                 <div class="md:w-1/2">
                     <img src="https://i.ibb.co/8L2K8Zkk/p2.jpg" 
                          alt="Another great memory" 
                          class="w-full rounded-lg shadow-md aspect-video md:aspect-square object-cover">
                 </div>
-                
-                <!-- EDIT THIS TEXT -->
                 <div class="md:w-1/2 mt-6 md:mt-0">
                     <h2 class="font-serif text-3xl font-bold text-pink-600">My Biggest Support</h2>
                     <p class="mt-4 text-lg">
@@ -171,11 +135,7 @@
             </div>
         </section>
 
-        <!-- 
-          SECTION 3: Text Only
-        -->
         <section class="scroll-animate max-w-2xl mx-auto my-24 text-center p-6">
-            <!-- EDIT THIS TEXT -->
             <h2 class="font-serif text-4xl font-bold text-pink-600">
                 बहन❤️
             </h2>
@@ -183,45 +143,34 @@
                 May this new year of your life bring you endless joy, 
                 peace, and prosperity. Thank you for always being an inspiration.
                 I'm so grateful for all the wonderful memories we've shared.
-                 May your birthday be as special as you are. 
+                May your birthday be as special as you are. 
             </p>
         </section>
 
-        <!-- 
-          SECTION 4: Final Photo
-        -->
         <section class="scroll-animate max-w-4xl mx-auto my-24 p-6 md:p-10 bg-white rounded-2xl shadow-xl">
             <div class="md:flex md:items-center md:space-x-10">
-                <!-- EDIT THIS IMAGE -->
                 <div class="md:w-1/2">
                     <img src="https://i.ibb.co/wFgCvgvn/p3.jpg" 
                          alt="Your favorite photo together" 
                          class="w-full rounded-lg shadow-md aspect-video md:aspect-square object-cover">
                 </div>
-                
-                <!-- EDIT THIS TEXT -->
                 <div class="md:w-1/2 mt-6 md:mt-0">
                     <h2 class="font-serif text-3xl font-bold text-pink-600">The Best Sister</h2>
                     <p class="mt-4 text-lg">
-                         Happy Birthday to the most amazing sister in the world.
-                         I'm so grateful for everything you do and everything you are.
+                        Happy Birthday to the most amazing sister in the world.
+                        I'm so grateful for everything you do and everything you are.
                     </p>
                 </div>
             </div>
         </section>
-   <!-- 
-        SECTION 2: Image on Right
-        -->
+        
         <section class="scroll-animate max-w-4xl mx-auto my-24 p-6 md:p-10 bg-white rounded-2xl shadow-xl">
             <div class="md:flex md:items-center md:space-x-10 md:flex-row-reverse md:space-x-reverse">
-                <!-- EDIT THIS IMAGE -->
                 <div class="md:w-1/2">
                     <img src="https://i.ibb.co/9HqjCBrr/p12.jpg" 
                          alt="Another great memory" 
                          class="w-full rounded-lg shadow-md aspect-video md:aspect-square object-cover">
                 </div>
-                
-                <!-- EDIT THIS TEXT -->
                 <div class="md:w-1/2 mt-6 md:mt-0">
                     <h2 class="font-serif text-3xl font-bold text-pink-600">Always My Guide</h2>
                     <p class="mt-4 text-lg">
@@ -232,12 +181,9 @@
                 </div>
             </div>
         </section>
-        <!-- 
         
     </main>
 
-     FOOTER -->
-    <!-- Add relative and z-20 -->
     <footer class="text-center py-10 relative z-20">
         <p class="text-pink-400">Made with Harshbks ❤️</p>
     </footer>
